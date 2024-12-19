@@ -24,4 +24,3 @@ def first(
 def firstx(iterable: Iterable[T], filter_func: Callable[[T], bool] | None = None) -> T:
     """Get the first element from an iterable. Raises TypeError if empty"""
     return nonethrows(first(iterable, filter_func))
-
