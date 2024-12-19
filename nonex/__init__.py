@@ -4,7 +4,7 @@ T = TypeVar("T")
 
 
 def nonethrows(value: T | None, msg: str | None = None) -> T:
-    """Coerce an value to non-optional. Raise TypeError if the value is None"""
+    """Coerce a value to non-optional. Raise TypeError if the value is None"""
     if value is None:
         raise TypeError(msg or "Unexpected None")
     return value
