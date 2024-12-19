@@ -1,12 +1,15 @@
 [tool.poetry]
 name = "nonex"
-version = "0.1.3"
+version = "0.1.4"
 description = ""
 authors = ["Roy Rothenberg <royrothenberg@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+
+[tool.setuptools.package-data]
+nonex = ["py.typed"]
 
 
 [tool.poetry.group.dev.dependencies]
